@@ -5,6 +5,9 @@ theme: "hugo-theme-stack"
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 hasCJKLanguage: true
 enableEmoji: true
+googleAnalytics: "G-2YGSPQVSKK"
+permalinks:
+  post: "/:sections/:year/:month/:slug/"
 
 
 menu:
