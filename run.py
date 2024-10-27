@@ -29,30 +29,30 @@ def get_random_setup(sheet, excel_file = 'data.xlsx'):
     return random.choice(first_column)
 
 def create_prompt():
-    PROMPT = f"""根据我提供的故事元素，你的任务是创作一部精彩、迷人且拥有600字左右的短篇故事。建议你以细腻的笔触处理每一处细节，并以优雅而生动的语言呈现故事的魅力。请详实地描绘每个角色，展示出他们的性格特点以及在故事中的地位和作用。你可以通过具体而生动的描述塑造情节，使读者对角色产生共鸣。
+    PROMPT = f"""Based on the story elements I provide, your task is to craft a compelling and captivating short story of approximately 600 words. It is recommended that you handle every detail with meticulous care, presenting the story's charm with elegant and vivid language. Please thoroughly depict each character, showcasing their personality traits, their roles, and their significance within the narrative. You should shape the plot through concrete and vivid descriptions, allowing readers to empathize with the characters.
 
-是时候显现你那专业作家的技巧了，让你的故事生动有趣，充满启发性。期待你能巧妙地将我提供的所有故事元素融入故事情节中，而且希望你能根据这些元素特性提出独特的创新理念，这样可以进一步丰富故事的内容，给读者带来愉快的阅读体验。
+It's time to showcase your professional writer's skills; make your story lively, engaging, and thought-provoking. I expect you to cleverly integrate all the provided story elements into the plot. Furthermore, I hope you will propose unique and innovative ideas based on the characteristics of these elements to further enrich the story and provide a pleasant reading experience.
 
-请确保你的短篇故事完整连贯，故事叙述逻辑清晰，从开始到结束一气呵成。你的目标是创作一部可以在轻松愉快的阅读环境中启发读者深思的故事。
+Ensure your short story is complete, coherent, and logically structured from beginning to end. Your goal is to create a story that inspires reflection in a relaxed and enjoyable reading environment.
 
-以下是要求:
+Requirements:
 
-- 关键字：{get_random_setup('形容词')}{get_random_setup('关键字')}
+- keyword: {get_random_setup('形容词')}{get_random_setup('关键字')}
 - {get_random_setup('小说类型')}
 - {get_random_setup('文笔风格')}
 - {get_random_setup('结局')}
 - {get_random_setup('其他要求')}
 
-用 Markdown 文本的格式输出给我，不需要其他信息。
+Provide your response in markdown block format, no other information.
 
-- slug: 标题英文slug
-- categories 和 tags 都尽量多一点
-- 全文用英文
+- slug: title-in-english
+- comprehensive categories and tags
+- use English
 
 Example format:
 ```markdown
 ---
-title: 隐晦有深意的英文标题
+title: Deep meaning English Title
 author: Xiaowen Zhang
 date: 2023-01-01T07:00:00+08:00
 slug: title-in-english
@@ -195,8 +195,8 @@ def batch_process(from_date=datetime.now(), to_date=datetime.now()):
 
 
 if __name__ == "__main__":
-    str_from = "2024-10-27"
-    str_to = "2024-10-27"
+    str_from = "2024-10-25"
+    str_to = "2024-10-25"
     from_date=datetime.strptime(str_from, '%Y-%m-%d')
     to_date=datetime.strptime(str_to, '%Y-%m-%d')
 
