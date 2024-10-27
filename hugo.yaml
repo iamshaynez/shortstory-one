@@ -7,7 +7,7 @@ hasCJKLanguage: true
 enableEmoji: true
 googleAnalytics: "G-2YGSPQVSKK"
 permalinks:
-  post: "/:sections/:year/:month/:slug/"
+  posts: "/:sections/:year/:month/:slug/"
 
 
 menu:
@@ -34,7 +34,7 @@ menu:
 params:
     description: "\"I write the best short horror stories in the world.\""
     mainSections:
-        - post
+        - posts
     featuredImageField: image
     rssFullContent: true
     favicon: /ninja-3.jpeg
