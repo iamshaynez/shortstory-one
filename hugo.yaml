@@ -23,6 +23,12 @@ menu:
       params:
         icon: "rss"
         newTab: true
+    - name: "Support Me"
+      url: "https://luglawhaulsano.net/4/8432102"
+      weight: 10
+      params:
+        icon: "link"
+        newTab: true
     - name: "Medium"
       url: "https://medium.com/@theshortstory"
       weight: 19
