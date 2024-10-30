@@ -189,15 +189,12 @@ def batch_process(from_date=datetime.now(), to_date=datetime.now()):
     while current_date <= to_date:
         print(f'Process Date: {current_date.strftime("%Y-%m-%d")}')
         process(current_date)
-        process(current_date)
-        process(current_date)
-        process(current_date)
         current_date += timedelta(days=1)
 
 
 if __name__ == "__main__":
-    str_from = "2024-10-29"
-    str_to = "2024-10-29"
+    str_from = "2024-09-01"
+    str_to = "2024-09-30"
     from_date=datetime.strptime(str_from, '%Y-%m-%d')
     to_date=datetime.strptime(str_to, '%Y-%m-%d')
 
