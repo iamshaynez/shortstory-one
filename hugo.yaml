@@ -38,7 +38,7 @@ menu:
 
 
 params:
-    description: "\"I write the best short horror stories in the world.\""
+    description: "\"We write the best short stories in the world.\""
     mainSections:
         - posts
     featuredImageField: image
