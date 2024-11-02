@@ -55,7 +55,8 @@ Requirements:
 Provide your response in markdown block format, no other information.
 
 - slug: title-in-english
-- comprehensive categories and tags
+- categories: 1 word list with at least 2
+- tags: 1 word list with at least 5
 - use English
 
 Example format:
@@ -243,8 +244,8 @@ def batch_process_multi_thread(from_date=datetime.now(), to_date=datetime.now(),
 
 
 if __name__ == "__main__":
-    str_from = "2024-06-01"
-    str_to = "2024-07-31"
+    str_from = "2024-01-01"
+    str_to = "2024-05-31"
     from_date=datetime.strptime(str_from, '%Y-%m-%d')
     to_date=datetime.strptime(str_to, '%Y-%m-%d')
 
