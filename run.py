@@ -12,15 +12,16 @@ from dotenv import load_dotenv
 load_dotenv()
 # gets API Key from environment variable OPENAI_API_KEY
 client = OpenAI(
-  base_url=os.environ["OPENROUTER_API"],
-  api_key=os.environ["OPENROUTER_KEY"],
+  base_url=os.environ["TZ_API"],
+  api_key=os.environ["TZ_KEY"],
 )
 
 # OPENROUTER MODEL
-MODEL='anthropic/claude-3.5-sonnet'
+#MODEL='anthropic/claude-3.5-sonnet'
 
 # TZ MODEL
-# MODEL='gpt-4o-2024-08-06'
+# MODEL='tuzi-claude35-sonnet-20240620'
+MODEL='gpt-4o-2024-08-06'
 
 # 对 Prompt 进行建模
 # - 关键字 1
@@ -55,8 +56,8 @@ Requirements:
 Provide your response in markdown block format, no other information.
 
 - slug: title-in-english
-- categories: 1 word list with at least 2
-- tags: 1 word list with at least 5
+- categories: 1 word list with at least 2 categories
+- tags: 1 word list with at least 5 tags
 - use English
 
 Example format:
@@ -244,8 +245,8 @@ def batch_process_multi_thread(from_date=datetime.now(), to_date=datetime.now(),
 
 
 if __name__ == "__main__":
-    str_from = "2024-01-01"
-    str_to = "2024-05-31"
+    str_from = "2023-01-03"
+    str_to = "2023-12-31"
     from_date=datetime.strptime(str_from, '%Y-%m-%d')
     to_date=datetime.strptime(str_to, '%Y-%m-%d')
 
