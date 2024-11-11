@@ -21,6 +21,7 @@ client = OpenAI(
 
 # TZ MODEL
 # MODEL='tuzi-claude35-sonnet-20240620'
+#MODEL='claude-3-5-sonnet-20241022-fast'
 MODEL='gpt-4o-2024-08-06'
 
 # 对 Prompt 进行建模
@@ -246,8 +247,8 @@ def batch_process_multi_thread(from_date=datetime.now(), to_date=datetime.now(),
 
 
 if __name__ == "__main__":
-    str_from = "2024-11-04"
-    str_to = "2024-11-05"
+    str_from = "2022-01-03"
+    str_to = "2022-12-31"
     from_date=datetime.strptime(str_from, '%Y-%m-%d')
     to_date=datetime.strptime(str_to, '%Y-%m-%d')
 
