@@ -8,7 +8,8 @@ enableEmoji: true
 googleAnalytics: "G-66P2FP0GRX"
 permalinks:
   posts: "/:sections/:year/:month/:slug/"
-paginate: 30
+pagination:
+  pagerSize: 30
 
 menu:
   main:
