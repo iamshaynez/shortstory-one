@@ -212,7 +212,6 @@ def process_date_range(start_date, end_date):
         print(f'Thread {threading.current_thread().name} processing date: {current_date.strftime("%Y-%m-%d")}')
         process(current_date)
         process(current_date)
-        process(current_date)
         current_date += timedelta(days=1)
 
 def batch_process_multi_thread(from_date=datetime.now(), to_date=datetime.now(), num_threads=4):
@@ -247,8 +246,8 @@ def batch_process_multi_thread(from_date=datetime.now(), to_date=datetime.now(),
 
 
 if __name__ == "__main__":
-    str_from = "2022-01-03"
-    str_to = "2022-12-31"
+    str_from = "2024-11-12"
+    str_to = "2024-11-17"
     from_date=datetime.strptime(str_from, '%Y-%m-%d')
     to_date=datetime.strptime(str_to, '%Y-%m-%d')
 
