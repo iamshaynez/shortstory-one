@@ -12,17 +12,17 @@ from dotenv import load_dotenv
 load_dotenv()
 # gets API Key from environment variable OPENAI_API_KEY
 client = OpenAI(
-  base_url=os.environ["TZ_API"],
-  api_key=os.environ["TZ_KEY"],
+  base_url=os.environ["OPENROUTER_API"],
+  api_key=os.environ["OPENROUTER_KEY"],
 )
 
 # OPENROUTER MODEL
 #MODEL='anthropic/claude-3.5-sonnet'
-
+MODEL='mistralai/pixtral-large-2411'
 # TZ MODEL
 # MODEL='tuzi-claude35-sonnet-20240620'
 #MODEL='claude-3-5-sonnet-20241022-fast'
-MODEL='gpt-4o-2024-08-06'
+#MODEL='gpt-4o-2024-08-06'
 
 # 对 Prompt 进行建模
 # - 关键字 1
@@ -246,8 +246,8 @@ def batch_process_multi_thread(from_date=datetime.now(), to_date=datetime.now(),
 
 
 if __name__ == "__main__":
-    str_from = "2024-11-12"
-    str_to = "2024-11-17"
+    str_from = "2024-11-18"
+    str_to = "2024-11-20"
     from_date=datetime.strptime(str_from, '%Y-%m-%d')
     to_date=datetime.strptime(str_to, '%Y-%m-%d')
 

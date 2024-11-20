@@ -6,3 +6,5 @@ assets/jsconfig.json
 themes/hugo-theme-stack/*
 .env
 node_modules
+.venv
+venv
